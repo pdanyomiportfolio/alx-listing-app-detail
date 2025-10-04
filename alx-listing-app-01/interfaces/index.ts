@@ -15,4 +15,13 @@ export interface PropertyProps {
   };
   image: string;
   discount: string;
+  description: string;
+  reviews: ReviewProps[];
+}
+
+export interface ReviewProps {
+  user: string;
+  rating: number;
+  comment: string;
+  avatar?: string; // optional profile picture
 }
